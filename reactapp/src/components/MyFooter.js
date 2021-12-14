@@ -11,11 +11,14 @@ import {
 const MyFooter = () => {
     return (
         <Box>
-            <h1 style={{
-                color: "green",
-                textAlign: "center",
+            <h1 className="py-3 ml-5 mb-0" style={{
+                color: "white"
             }}>
-                StriveBooks
+                StriveBooks <span style={{
+                    color: "grey",
+                    fontSize: "0.5em",
+                    textAlign: "right"
+                }}>Read and Enjoy</span>
             </h1>
         </Box>
     );
