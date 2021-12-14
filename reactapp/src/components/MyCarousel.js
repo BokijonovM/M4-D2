@@ -4,16 +4,9 @@ import books from '../data/history.json'
 const MyCarousel = () => {
     return (
         <>
-            <h2 className="mb-2 pl-5" style={{
-                backgroundColor: "grey",
-                paddingTop: "90px",
-                paddingBottom: "90px",
-                position: "relative"
-
-            }}>Welcome to StriveBook</h2>
             <Container>
                 <Carousel>
-                    {books.map(book => (
+                    {books.slice(0, 3).map(book => (
                         <Carousel.Item>
                             <img
                                 style={{
