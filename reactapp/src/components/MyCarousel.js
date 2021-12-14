@@ -1,5 +1,5 @@
 import { Carousel, Container } from 'react-bootstrap'
-
+import books from '../data/history.json'
 
 const MyCarousel = () => {
     return (
@@ -12,28 +12,28 @@ const MyCarousel = () => {
 
             }}>Welcome to StriveBook</h2>
             <Container>
-                <h3>
-                    Latest Release
-                </h3>
                 <Carousel>
+                    {books.map(book => (
+                        <Carousel.Item>
+                            <img
+                                style={{
+                                    objectFit: "cover",
 
+                                }}
+                                className="d-block w-100"
+                                src={book.img}
+                                alt="First slide"
+                                height="300px"
 
-                    <Carousel.Item>
-                        <img
-                            style={{
-
-                            }}
-                            className="d-block w-100"
-                            src="https://images-na.ssl-images-amazon.com/images/I/91uxJwnolDL.jpg"
-                            alt="First slide"
-                            height="300px"
-
-                        />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+                            />
+                            <Carousel.Caption style={{
+                                backgroundColor: "grey"
+                            }}>
+                                <h3>Latest Release</h3>
+                                <p>{book.title}</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    ))}
                 </Carousel>
             </Container>
         </>
