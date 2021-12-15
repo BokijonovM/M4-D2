@@ -7,7 +7,7 @@ const MyCarousel = () => {
             <Container>
                 <Carousel>
                     {books.slice(0, 3).map(book => (
-                        <Carousel.Item>
+                        <Carousel.Item key={book.asin}>
                             <img
                                 style={{
                                     objectFit: "cover",

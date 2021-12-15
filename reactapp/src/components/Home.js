@@ -1,4 +1,4 @@
-import { Container, Card, Row, Col, Carousel } from 'react-bootstrap'
+import { Container, Card, Row, Col } from 'react-bootstrap'
 import books from '../data/history.json'
 
 
@@ -12,7 +12,7 @@ const Home = () => {
                 <Row xs={2} md={4} className="g-4">
                     {books.map(book => (
                         <Col className="">
-                            <Card className="my-2" key={book.asin}>
+                            <Card key={book.asin} className="my-2" >
                                 <Card.Img variant="top" src={book.img} />
                                 <Card.Body>
                                     <Card.Title>{book.title}</Card.Title>
