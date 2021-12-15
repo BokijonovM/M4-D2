@@ -1,6 +1,7 @@
 .App {
   overflow-y: hidden;
   background-color: #282c34;
+  color: #fff;
 }
 
 .App-logo {
@@ -36,4 +37,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.bag-selected{
+  background-color: rgb(83, 83, 83);
 }

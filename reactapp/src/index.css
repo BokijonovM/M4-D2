@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.my-badge {
+  position: absolute;
+  right: 25px;
+  top: 40px;
+}
