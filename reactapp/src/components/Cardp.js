@@ -33,7 +33,7 @@ class Cardp extends Component {
                                 this.setState({
                                     showPrice: this.props.theme.price,
                                     btnColor: 'success',
-                                    cardClass: "px-3 py-4 m-0 bag-selected border-0 w-100",
+                                    cardClass: "px-3 py-4 m-0 border-0 w-100",
                                 })
                             }
 

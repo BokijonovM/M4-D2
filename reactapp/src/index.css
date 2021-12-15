@@ -16,3 +16,8 @@ code {
   right: 25px;
   top: 40px;
 }
+
+
+.bag-selected{
+  background-color: rgb(83, 83, 83);
+}

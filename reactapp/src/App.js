@@ -6,6 +6,7 @@ import MyFooter from './components/MyFooter'
 import MyCarousel from './components/MyCarousel'
 import { Jumbotron } from 'react-bootstrap'
 import WarningSign from './components/WarningSign';
+import MySearch from './components/MySearch';
 import fantasy from './data/fantasy.json'
 import history from './data/history.json'
 import horror from './data/horror.json'
@@ -21,6 +22,7 @@ function App() {
         <p>Jumbotron</p>
       </Jumbotron>
       <MyCarousel />
+      <MySearch />
       <Section title="Fantasy" theme={fantasy} slInitial={0} slFinal={4} />
       <Section title="History" theme={history} slInitial={0} slFinal={4} />
       <Section title="Horror" theme={horror} slInitial={0} slFinal={4} />
