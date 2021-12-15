@@ -16,7 +16,7 @@ const MyCarousel = () => {
                                 className="d-block w-100"
                                 src={book.img}
                                 alt="First slide"
-                                height="300px"
+                                height="400px"
 
                             />
                             <Carousel.Caption style={{
