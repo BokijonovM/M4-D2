@@ -1,11 +1,6 @@
 import React from "react";
 import {
-    Box,
-    Container,
-    Row,
-    Column,
-    FooterLink,
-    Heading,
+    Box
 } from "./FooterStyles";
 
 const MyFooter = () => {

@@ -32,8 +32,8 @@ class Cardp extends Component {
                             onClick={() => {
                                 this.setState({
                                     showPrice: this.props.theme.price,
-                                    btnColor: 'success',
-                                    cardClass: "px-3 py-4 m-0 border-0 w-100",
+                                    btnColor: 'secondary',
+                                    cardClass: "px-3 py-4 bg-dark m-0 border-0 w-100",
                                 })
                             }
 

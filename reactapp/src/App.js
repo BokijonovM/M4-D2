@@ -4,9 +4,9 @@ import MyNav from './components/MyNav'
 import Section from './components/Section'
 import MyFooter from './components/MyFooter'
 import MyCarousel from './components/MyCarousel'
-import { Jumbotron } from 'react-bootstrap'
+import { Jumbotron, Button, Container } from 'react-bootstrap'
 import WarningSign from './components/WarningSign';
-import MySearch from './components/MySearch';
+import Search from './components/Search';
 import fantasy from './data/fantasy.json'
 import history from './data/history.json'
 import horror from './data/horror.json'
@@ -17,12 +17,22 @@ function App() {
     <div className="App">
       <MyNav payoff="Read, Learn and Enjoy!" />
       <WarningSign text="This is a extremely dangerous Alert" />
-      <Jumbotron>
-        <h2>StriveBooks</h2>
-        <p>Jumbotron</p>
+      <Jumbotron style={{
+        color: "black"
+      }}>
+        <h1>Regular, Jumbotron!</h1>
+        <p>
+          This is a simple Jumbotron example.
+        </p>
+
+        <p>
+          <Button variant="primary">
+            Primary Button
+          </Button>
+        </p>
       </Jumbotron>
       <MyCarousel />
-      <MySearch />
+      <Search title="Search" theme={fantasy} />
       <Section title="Fantasy" theme={fantasy} slInitial={0} slFinal={4} />
       <Section title="History" theme={history} slInitial={0} slFinal={4} />
       <Section title="Horror" theme={horror} slInitial={0} slFinal={4} />

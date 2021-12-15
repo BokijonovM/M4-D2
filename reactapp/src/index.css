@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -15,9 +16,4 @@ code {
   position: absolute;
   right: 25px;
   top: 40px;
-}
-
-
-.bag-selected{
-  background-color: rgb(83, 83, 83);
 }
