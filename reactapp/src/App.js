@@ -18,7 +18,9 @@ function App() {
       <MyNav payoff="Read, Learn and Enjoy!" />
       <WarningSign text="This is a extremely dangerous Alert" />
       <Jumbotron style={{
-        color: "black"
+        color: "black",
+        backgroundImage: 'url(' + "https://cdn.shopify.com/s/files/1/0066/4574/3686/files/Chicago_Skyline_LinkedIn_Background_Photo.png?v=1627912075" + ')',
+        backgroundSize: "cover",
       }}>
         <h1>Regular, Jumbotron!</h1>
         <p>
