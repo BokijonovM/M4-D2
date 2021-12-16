@@ -33,19 +33,22 @@ export default class CommentList extends Component {
                     <div className="my-3 ml-2">
                         <div>
                             <h6 className='mb-0' style={{
-                                color: "grey"
+                                color: "grey",
+                                fontSize: "20px"
                             }}>Comment</h6>
                             <p>{this.props.reviewInfo.comment}</p>
                         </div>
                         <div>
                             <h6 className='mb-0' style={{
-                                color: "grey"
+                                color: "grey",
+                                fontSize: "20px"
                             }}>Rate</h6>
                             <p>{this.props.reviewInfo.rate}</p>
                         </div>
                         <div>
                             <h6 className='mb-0' style={{
-                                color: "grey"
+                                color: "grey",
+                                fontSize: "20px"
                             }}>Date</h6>
                             {/* DateTime formatted */}
                             <p className="mb-2">

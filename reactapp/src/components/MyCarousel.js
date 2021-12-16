@@ -1,5 +1,5 @@
 import { Carousel, Container } from 'react-bootstrap'
-import books from '../data/history.json'
+import books from '../data/fantasy.json'
 
 const MyCarousel = () => {
     return (
