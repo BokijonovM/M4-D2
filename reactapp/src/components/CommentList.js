@@ -32,17 +32,25 @@ export default class CommentList extends Component {
                 {this.state.commentExists &&
                     <div className="my-3 ml-2">
                         <div>
-                            <h6>Comment</h6>
+                            <h6 className='mb-0' style={{
+                                color: "grey"
+                            }}>Comment</h6>
                             <p>{this.props.reviewInfo.comment}</p>
                         </div>
                         <div>
-                            <h6>Rate</h6>
+                            <h6 className='mb-0' style={{
+                                color: "grey"
+                            }}>Rate</h6>
                             <p>{this.props.reviewInfo.rate}</p>
                         </div>
                         <div>
-                            <h6>Date</h6>
-                            <p>{this.props.reviewInfo.createdAt}</p>
-                            {format(parseISO(this.props.reviewInfo.createdAt), 'MMMM do yyyy | HH:mm')}
+                            <h6 className='mb-0' style={{
+                                color: "grey"
+                            }}>Date</h6>
+                            {/* DateTime formatted */}
+                            <p className="mb-2">
+                                {format(parseISO(this.props.reviewInfo.createdAt), 'MMMM do yyyy | HH:mm')}
+                            </p>
                         </div>
 
                         <Button variant="danger" onClick={() => this.removeComment()} >Delete Comment</Button>

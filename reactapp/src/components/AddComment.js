@@ -75,7 +75,9 @@ export default class AddComment extends Component {
                 <Form onSubmit={this.sendForm} className="justify-content-center flex-column" inline>
                     <Form.Group className="mb-3 d-flex flex-column justify-content-center" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Leave a comment</Form.Label>
-                        <Form.Control onChange={(e) => this.inputHandler('comment', e.target.value)} value={this.state.userReview.comment} as="textarea" rows={3} />
+                        <Form.Control onChange={(e) => this.inputHandler('comment', e.target.value)} value={this.state.userReview.comment} as="textarea" rows={4} style={{
+                            width: "300px"
+                        }} />
                     </Form.Group>
                     <div className="d-flex mb-4">
                         <StarRatings
@@ -86,8 +88,8 @@ export default class AddComment extends Component {
                             changeRating={this.getRate}
                             numberOfStars={5}
                             name='rating'
-                            starDimension="16px"
-                            starSpacing="4px"
+                            starDimension="26px"
+                            starSpacing="6px"
                         />
                     </div>
                     <Button type="submit" variant="outline-success">Add a comment</Button>
