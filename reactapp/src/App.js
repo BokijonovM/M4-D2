@@ -1,7 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNav from './components/MyNav'
-import Section from './components/Section'
 import MyFooter from './components/MyFooter'
 import MyCarousel from './components/MyCarousel'
 import { Jumbotron, Button } from 'react-bootstrap'

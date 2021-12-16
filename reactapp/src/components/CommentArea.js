@@ -69,9 +69,15 @@ export default class CommentArea extends Component {
 
             (<Card className="justify-content-center bg-transparent mt-5 border-0">
                 {this.state.errorHandle && <WarningSign variant="danger" text="Sorry try again in a bit"></WarningSign>}
-                <h2>{this.state.bookTitle}</h2>
-                <Card.Img className="imageFixBig" variant="top" src={this.props.book.img}>
+
+                <Card.Img className="imageFixBig" variant="top" style={{
+                    marginTop: "156px",
+                    height: "500px",
+                    objectFit: "cover"
+                }} src={this.props.book.img}>
+
                 </Card.Img>
+                <h2 className="my-3">{this.state.bookTitle}</h2>
                 {this.state.isLoading && (<Loading></Loading>)}
                 {this.state.remainingComments ?
                     (this.state.commentList.map(comment => <CommentList getNewComments={this.getComments} key={comment._id} reviewInfo={comment}></CommentList>))
