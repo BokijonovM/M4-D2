@@ -25,10 +25,10 @@ export default class MainContent extends Component {
                 <Row>
                     <Col md={8}>
                         <Search getUserSelectedBook={this.getUserSelectedBook} title="Search" theme={fantasy} />
-                        <Section getUserSelectedBook={this.getUserSelectedBook} title="Latest Release" theme={fantasy} slInitial={0} slFinal={4} />
-                        <Section getUserSelectedBook={this.getUserSelectedBook} title="History" theme={history} slInitial={0} slFinal={4} />
-                        <Section getUserSelectedBook={this.getUserSelectedBook} title="Horror" theme={horror} slInitial={0} slFinal={4} />
-                        <Section getUserSelectedBook={this.getUserSelectedBook} title="Sci-fi" theme={scifi} slInitial={0} slFinal={4} />
+                        <Section getUserSelectedBook={this.getUserSelectedBook} title="Latest Release" theme={fantasy} slInitial={5} slFinal={9} />
+                        <Section getUserSelectedBook={this.getUserSelectedBook} title="History" theme={history} slInitial={5} slFinal={9} />
+                        <Section getUserSelectedBook={this.getUserSelectedBook} title="Horror" theme={horror} slInitial={5} slFinal={9} />
+                        <Section getUserSelectedBook={this.getUserSelectedBook} title="Sci-fi" theme={scifi} slInitial={5} slFinal={9} />
                     </Col>
                     <Col md={4}>
                         <CommentArea id="commentArea" book={this.state.displayedBook} />

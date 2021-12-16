@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <MyNav payoff="Read, Learn and Enjoy!" />
       <Jumbotron style={{
-        color: "black",
-        backgroundImage: 'url(' + "https://cdn.shopify.com/s/files/1/0066/4574/3686/files/Chicago_Skyline_LinkedIn_Background_Photo.png?v=1627912075" + ')',
+        color: "white",
+        backgroundImage: 'url(' + "https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGlicmFyeXxlbnwwfHwwfHw%3D&w=1000&q=80" + ')',
         backgroundSize: "cover",
       }}>
         <h1>Regular, Jumbotron!</h1>

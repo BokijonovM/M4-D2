@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Button } from 'react-bootstrap'
 import WarningSign from './WarningSign'
+import { parseISO, format } from 'date-fns'
 
 export default class CommentList extends Component {
     state = {
@@ -41,6 +42,7 @@ export default class CommentList extends Component {
                         <div>
                             <h6>Date</h6>
                             <p>{this.props.reviewInfo.createdAt}</p>
+                            {format(parseISO(this.props.reviewInfo.createdAt), 'MMMM do yyyy | HH:mm')}
                         </div>
 
                         <Button variant="danger" onClick={() => this.removeComment()} >Delete Comment</Button>
