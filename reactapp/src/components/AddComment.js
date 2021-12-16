@@ -92,7 +92,7 @@ export default class AddComment extends Component {
                             starSpacing="6px"
                         />
                     </div>
-                    <Button type="submit" variant="outline-success">Add a comment</Button>
+                    <Button type="submit" variant="info">Add a comment</Button>
                 </Form>
 
             </div>
