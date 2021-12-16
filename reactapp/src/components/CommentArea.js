@@ -71,7 +71,7 @@ export default class CommentArea extends Component {
                 {this.state.errorHandle && <WarningSign variant="danger" text="Sorry try again in a bit"></WarningSign>}
 
                 <Card.Img className="imageFixBig" variant="top" style={{
-                    marginTop: "156px",
+                    marginTop: "166px",
                     height: "500px",
                     objectFit: "cover"
                 }} src={this.props.book.img}>
