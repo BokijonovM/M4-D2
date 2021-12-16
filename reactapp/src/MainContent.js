@@ -23,6 +23,10 @@ export default class MainContent extends Component {
         return (
             <Container fluid>
                 <Row>
+                    <Col md={4}>
+                        <CommentArea id="commentArea" book={this.state.displayedBook} />
+
+                    </Col>
                     <Col md={8}>
                         <Search getUserSelectedBook={this.getUserSelectedBook} title="Search" theme={fantasy} />
                         <Section getUserSelectedBook={this.getUserSelectedBook} title="Fantasy" theme={fantasy} slInitial={0} slFinal={4} />
@@ -30,10 +34,7 @@ export default class MainContent extends Component {
                         <Section getUserSelectedBook={this.getUserSelectedBook} title="Horror" theme={horror} slInitial={5} slFinal={9} />
                         <Section getUserSelectedBook={this.getUserSelectedBook} title="Sci-fi" theme={scifi} slInitial={5} slFinal={9} />
                     </Col>
-                    <Col md={4}>
-                        <CommentArea id="commentArea" book={this.state.displayedBook} />
 
-                    </Col>
                 </Row>
             </Container>
         )
