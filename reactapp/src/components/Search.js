@@ -33,17 +33,17 @@ class Search extends Component {
 
     render() {
         return (
-            <Container className="xtra-topMargin px-0">
+            <Container className="xtra-topMargin px-0 mb-5">
                 <Row>
-                    <h2 className="px-4 ml-2 my-5 align-items-center">{this.props.title}</h2>
-                    <Form inline className="my-5">
+                    <h2 className="px-4 ml-2 align-items-center">{this.props.title}</h2>
+                    <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={(e) => this.searchBooks(e)} />
                         <Button variant="outline-success">Search</Button>
                     </Form>
                 </Row>
                 <div className="row row-cols-sm-2 row-cols-md-2 row-cols-lg-4 px-3">
 
-                    {this.state.search.books.map((book) => <Cardp key={book.asin} theme={book} />)}
+                    {this.state.search.books.map((book) => <Cardp getUserSelectedBook={this.props.getUserSelectedBook} getDisplayedBook={this.props.getDisplayedBook} key={book.asin} theme={book} />)}
                 </div>
             </Container>
         );

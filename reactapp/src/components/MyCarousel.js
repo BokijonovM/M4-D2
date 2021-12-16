@@ -4,7 +4,7 @@ import books from '../data/history.json'
 const MyCarousel = () => {
     return (
         <>
-            <Container>
+            <Container className="mb-5">
                 <Carousel>
                     {books.slice(0, 3).map(book => (
                         <Carousel.Item key={book.asin}>
