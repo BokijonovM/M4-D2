@@ -5,7 +5,7 @@ import StarRatings from 'react-star-ratings'
 export default class AddComment extends Component {
 
     state = {
-        userReview: {
+        userReview1: {
             comment: '',
             rate: undefined,
             elementId: this.props.book.asin
@@ -16,8 +16,8 @@ export default class AddComment extends Component {
 
     inputHandler = (key, value) => {
         this.setState({
-            userReview: {
-                ...this.state.userReview,
+            userReview1: {
+                ...this.state.userReview1,
                 [key]: value
             }
         })
@@ -25,8 +25,8 @@ export default class AddComment extends Component {
     }
     getRate = (newRating) => {
         this.setState({
-            userReview: {
-                ...this.state.userReview,
+            userReview1: {
+                ...this.state.userReview1,
                 rate: newRating
             }
         })
@@ -37,7 +37,7 @@ export default class AddComment extends Component {
         e.preventDefault()
         await fetch('https://striveschool-api.herokuapp.com/api/comments/', {
             method: 'POST',
-            body: JSON.stringify(this.state.userReview),
+            body: JSON.stringify(this.state.userReview1),
             headers: {
                 "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWIwYjA3YTRjZmY1ZjAwMTU5MGJkYjMiLCJpYXQiOjE2Mzk2NjI3NzEsImV4cCI6MTY0MDg3MjM3MX0.WBnZ0WMWPLNehQ44giJNdrKAD0SXGXeE12hsUECqeLg",
                 "Content-Type": "application/json"
@@ -45,8 +45,8 @@ export default class AddComment extends Component {
         })
 
         this.setState({
-            userReview: {
-                ...this.state.userReview,
+            userReview1: {
+                ...this.state.userReview1,
                 comment: '',
                 rate: undefined
 
@@ -58,8 +58,8 @@ export default class AddComment extends Component {
     componentDidUpdate(prevProps, prevState) {
         if (this.props.book.asin !== prevProps.book.asin) {
             this.setState({
-                userReview: {
-                    ...this.state.userReview,
+                userReview1: {
+                    ...this.state.userReview1,
                     elementId: this.props.book.asin
                 }
             })
@@ -75,13 +75,13 @@ export default class AddComment extends Component {
                 <Form onSubmit={this.sendForm} className="justify-content-center flex-column" inline>
                     <Form.Group className="mb-3 d-flex flex-column justify-content-center" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Leave a comment</Form.Label>
-                        <Form.Control onChange={(e) => this.inputHandler('comment', e.target.value)} value={this.state.userReview.comment} as="textarea" rows={4} style={{
+                        <Form.Control onChange={(e) => this.inputHandler('comment', e.target.value)} value={this.state.userReview1.comment} as="textarea" rows={4} style={{
                             width: "300px"
                         }} />
                     </Form.Group>
                     <div className="d-flex mb-4">
                         <StarRatings
-                            rating={this.state.userReview.rate}
+                            rating={this.state.userReview1.rate}
                             starRatedColor="yellow"
                             starHoverColor="yellow"
                             starEmptyColor="rgb(129 129 129)"

@@ -67,7 +67,7 @@ export default class CommentArea extends Component {
     render() {
         return (
 
-            (<Card className="justify-content-center bg-transparent border-0">
+            (<Card className="justify-content-center bg-transparent mt-5 border-0">
                 {this.state.errorHandle && <WarningSign variant="danger" text="Sorry try again in a bit"></WarningSign>}
                 <h2>{this.state.bookTitle}</h2>
                 <Card.Img className="imageFixBig" variant="top" src={this.props.book.img}>
