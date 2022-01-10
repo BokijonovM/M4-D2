@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNav from './components/MyNav'
 import MyFooter from './components/MyFooter'
-import MyCarousel from './components/MyCarousel'
+// import MyCarousel from './components/MyCarousel'
 import { Jumbotron, Button } from 'react-bootstrap'
 import MainContent from './MainContent';
 
@@ -27,7 +27,7 @@ function App() {
           </Button>
         </p>
       </Jumbotron>
-      <MyCarousel />
+      {/* <MyCarousel /> */}
       <MainContent />
       <MyFooter />
     </div>

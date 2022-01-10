@@ -1,0 +1,21 @@
+.main-md-9{
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.main-md-9::-webkit-scrollbar{
+    display: none
+}
+
+.main-md-41{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.main-md-41::-webkit-scrollbar{
+    display: none
+}

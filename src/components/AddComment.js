@@ -39,7 +39,7 @@ export default class AddComment extends Component {
             method: 'POST',
             body: JSON.stringify(this.state.userReview1),
             headers: {
-                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWIwYjA3YTRjZmY1ZjAwMTU5MGJkYjMiLCJpYXQiOjE2Mzk2NjI3NzEsImV4cCI6MTY0MDg3MjM3MX0.WBnZ0WMWPLNehQ44giJNdrKAD0SXGXeE12hsUECqeLg",
+                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWIwYjA3YTRjZmY1ZjAwMTU5MGJkYjMiLCJpYXQiOjE2NDE4MjAzMTYsImV4cCI6MTY0MzAyOTkxNn0.QvedsvE9IU4Q5gdIA4tTz8ZM2S62dDJvq2GVMZKUYbE",
                 "Content-Type": "application/json"
             }
         })
