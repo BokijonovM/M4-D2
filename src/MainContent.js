@@ -32,7 +32,6 @@ export default class MainContent extends Component {
                             <Section getUserSelectedBook={this.getUserSelectedBook} title="History" theme={history} slInitial={5} slFinal={9} />
                             <Section getUserSelectedBook={this.getUserSelectedBook} title="Horror" theme={horror} slInitial={5} slFinal={9} />
                             <Section getUserSelectedBook={this.getUserSelectedBook} title="Sci-fi" theme={scifi} slInitial={5} slFinal={9} />
-
                         </div>
                     </Col>
                     <Col md={3} className='main-md-3 mb-5'>

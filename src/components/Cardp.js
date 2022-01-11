@@ -8,7 +8,7 @@ class Cardp extends Component {
     state = {
         showPrice: null,
         btnColor: 'primary',
-        cardClass: "px-3 py-4 m-0 border-0 bg-transparent w-100",
+        cardClass: "px-3 pb-5 m-0 border-0 bg-transparent w-100",
         clicked: false
     }
 
@@ -20,7 +20,7 @@ class Cardp extends Component {
                 <MyBadge color="warning" price={this.props.theme.price} />
                 <Card.Img className="imageFix" variant="top" style={{
                     objectFit: "cover",
-                    height: "250px"
+                    height: "300px"
                 }} src={this.props.theme.img} />
                 <Card.Body className="d-flex flex-column pb-0 pt-2 px-0 justify-content-between">
                     <Card.Title className="mb-2">{this.props.theme.title}</Card.Title>

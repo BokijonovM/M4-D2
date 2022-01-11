@@ -10,10 +10,12 @@
     display: none
 }
 
+
 .main-md-41{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
+    height: 100%
 }
 
 .main-md-41::-webkit-scrollbar{

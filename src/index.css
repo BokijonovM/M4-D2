@@ -15,5 +15,9 @@ code {
 .my-badge {
   position: absolute;
   right: 25px;
-  top: 40px;
+  top: 20px;
+}
+
+::-webkit-scrollbar{
+  display: none
 }
